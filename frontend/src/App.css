@@ -16,10 +16,10 @@ body {
   min-height: 100vh;
 }
 
-/* Disco Page Base */
+/* Disco Page Base - Sunset Theme */
 .disco-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #1a0033 0%, #2d0052 50%, #1a0033 100%);
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 25%, #f9c74f 50%, #f08080 75%, #ee5a6f 100%);
   position: relative;
   overflow-x: hidden;
   color: white;
@@ -46,12 +46,12 @@ body {
   opacity: 0.3;
 }
 
-.disco-light:nth-child(1) { background: radial-gradient(circle, #ff006e, transparent); top: 10%; }
-.disco-light:nth-child(2) { background: radial-gradient(circle, #ffd700, transparent); top: 20%; }
-.disco-light:nth-child(3) { background: radial-gradient(circle, #00ffff, transparent); top: 30%; }
-.disco-light:nth-child(4) { background: radial-gradient(circle, #ff006e, transparent); top: 40%; }
-.disco-light:nth-child(5) { background: radial-gradient(circle, #ffd700, transparent); top: 50%; }
-.disco-light:nth-child(6) { background: radial-gradient(circle, #00ffff, transparent); top: 60%; }
+.disco-light:nth-child(1) { background: radial-gradient(circle, #ff6b35, transparent); top: 10%; }
+.disco-light:nth-child(2) { background: radial-gradient(circle, #f9c74f, transparent); top: 20%; }
+.disco-light:nth-child(3) { background: radial-gradient(circle, #ee5a6f, transparent); top: 30%; }
+.disco-light:nth-child(4) { background: radial-gradient(circle, #ff6b35, transparent); top: 40%; }
+.disco-light:nth-child(5) { background: radial-gradient(circle, #f9c74f, transparent); top: 50%; }
+.disco-light:nth-child(6) { background: radial-gradient(circle, #ee5a6f, transparent); top: 60%; }
 
 @keyframes disco-pulse {
   0%, 100% { transform: scale(1); opacity: 0.2; }
@@ -72,10 +72,10 @@ body {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #444, #888, #444);
+  background: linear-gradient(135deg, #ff6b35, #f9c74f, #ee5a6f);
   transform-style: preserve-3d;
   animation: disco-spin 8s linear infinite;
-  box-shadow: 0 0 50px rgba(255, 215, 0, 0.5),
+  box-shadow: 0 0 50px rgba(255, 107, 53, 0.6),
               inset 0 0 30px rgba(255, 255, 255, 0.3);
 }
 
@@ -88,7 +88,7 @@ body {
   height: 0;
   border-left: 100px solid transparent;
   border-right: 100px solid transparent;
-  border-top: 50px solid rgba(255, 215, 0, 0.3);
+  border-top: 50px solid rgba(249, 199, 79, 0.4);
   filter: blur(10px);
 }
 
@@ -96,8 +96,8 @@ body {
   position: absolute;
   width: 30px;
   height: 30px;
-  background: linear-gradient(45deg, #ffd700, #fff, #ffd700);
-  border: 1px solid #999;
+  background: linear-gradient(45deg, #f9c74f, #fff, #ff6b35);
+  border: 1px solid #ee5a6f;
   opacity: 0.8;
 }
 
@@ -133,43 +133,43 @@ body {
 .disco-subtitle {
   font-size: 1.5rem;
   margin-bottom: 3rem;
-  color: #ffd700;
+  color: #ffe5b4;
   font-weight: 300;
 }
 
-/* Neon Text Effect */
+/* Neon Text Effect - Sunset */
 .neon-text {
   color: #fff;
   text-shadow:
-    0 0 10px #ff006e,
-    0 0 20px #ff006e,
-    0 0 30px #ff006e,
-    0 0 40px #ff006e,
-    0 0 70px #ff006e,
-    0 0 80px #ff006e,
-    0 0 100px #ff006e;
+    0 0 10px #ff6b35,
+    0 0 20px #ff6b35,
+    0 0 30px #f9c74f,
+    0 0 40px #f9c74f,
+    0 0 70px #ee5a6f,
+    0 0 80px #ee5a6f,
+    0 0 100px #ff6b35;
   animation: neon-flicker 3s ease-in-out infinite alternate;
 }
 
 @keyframes neon-flicker {
   0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
     text-shadow:
-      0 0 10px #ff006e,
-      0 0 20px #ff006e,
-      0 0 30px #ff006e,
-      0 0 40px #ff006e,
-      0 0 70px #ff006e,
-      0 0 80px #ff006e,
-      0 0 100px #ff006e;
+      0 0 10px #ff6b35,
+      0 0 20px #ff6b35,
+      0 0 30px #f9c74f,
+      0 0 40px #f9c74f,
+      0 0 70px #ee5a6f,
+      0 0 80px #ee5a6f,
+      0 0 100px #ff6b35;
   }
   20%, 24%, 55% {
     text-shadow: none;
   }
 }
 
-/* Disco Button */
+/* Disco Button - Sunset */
 .disco-button {
-  background: linear-gradient(135deg, #ff006e, #ffd700);
+  background: linear-gradient(135deg, #ff6b35, #f9c74f);
   border: none;
   color: white;
   padding: 1.2rem 3rem;
@@ -180,14 +180,14 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   transition: all 0.3s ease;
-  box-shadow: 0 5px 30px rgba(255, 0, 110, 0.5);
+  box-shadow: 0 5px 30px rgba(255, 107, 53, 0.5);
   position: relative;
   z-index: 10;
 }
 
 .disco-button:hover {
   transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 8px 40px rgba(255, 0, 110, 0.7);
+  box-shadow: 0 8px 40px rgba(249, 199, 79, 0.7);
 }
 
 .disco-button:active {
@@ -204,7 +204,7 @@ body {
 
 .back-button {
   background: rgba(255, 255, 255, 0.1);
-  border: 2px solid #ff006e;
+  border: 2px solid #ff6b35;
   color: white;
   padding: 0.8rem 1.5rem;
   font-size: 1rem;
@@ -216,7 +216,7 @@ body {
 }
 
 .back-button:hover {
-  background: rgba(255, 0, 110, 0.3);
+  background: rgba(255, 107, 53, 0.3);
   transform: translateX(-5px);
 }
 
@@ -237,7 +237,7 @@ body {
   width: 100%;
   padding: 1rem 1.5rem;
   font-size: 1.1rem;
-  border: 2px solid #ff006e;
+  border: 2px solid #ff6b35;
   border-radius: 50px;
   background: rgba(255, 255, 255, 0.1);
   color: white;
@@ -251,8 +251,8 @@ body {
 
 .disco-search:focus {
   outline: none;
-  border-color: #ffd700;
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+  border-color: #f9c74f;
+  box-shadow: 0 0 20px rgba(249, 199, 79, 0.5);
   background: rgba(255, 255, 255, 0.15);
 }
 
@@ -270,7 +270,7 @@ body {
 .section-title {
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  color: #ffd700;
+  color: #ffe5b4;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -282,7 +282,7 @@ body {
   padding: 2rem;
   border-radius: 20px;
   backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 0, 110, 0.3);
+  border: 2px solid rgba(255, 107, 53, 0.3);
   max-height: 80vh;
   overflow-y: auto;
 }
@@ -305,16 +305,16 @@ body {
 }
 
 .ingredient-card:hover {
-  background: rgba(255, 0, 110, 0.2);
-  border-color: #ff006e;
+  background: rgba(255, 107, 53, 0.2);
+  border-color: #ff6b35;
   transform: translateY(-5px);
-  box-shadow: 0 5px 20px rgba(255, 0, 110, 0.5);
+  box-shadow: 0 5px 20px rgba(255, 107, 53, 0.5);
 }
 
 .ingredient-card.active {
-  background: rgba(255, 215, 0, 0.2);
-  border-color: #ffd700;
-  box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+  background: rgba(249, 199, 79, 0.2);
+  border-color: #f9c74f;
+  box-shadow: 0 0 30px rgba(249, 199, 79, 0.5);
 }
 
 .ingredient-icon {
@@ -334,7 +334,7 @@ body {
   padding: 2rem;
   border-radius: 20px;
   backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 215, 0, 0.3);
+  border: 2px solid rgba(249, 199, 79, 0.3);
   max-height: 80vh;
   overflow-y: auto;
 }
@@ -356,9 +356,9 @@ body {
 }
 
 .cocktail-card:hover {
-  border-color: #ffd700;
+  border-color: #f9c74f;
   transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 10px 40px rgba(255, 215, 0, 0.5);
+  box-shadow: 0 10px 40px rgba(249, 199, 79, 0.5);
 }
 
 .cocktail-image {
@@ -391,7 +391,7 @@ body {
   padding: 2rem;
   border-radius: 20px;
   backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 0, 110, 0.3);
+  border: 2px solid rgba(255, 107, 53, 0.3);
 }
 
 .details-image {
@@ -418,7 +418,7 @@ body {
 
 .meta-label {
   font-weight: 700;
-  color: #ffd700;
+  color: #f9c74f;
 }
 
 .meta-value {
@@ -436,7 +436,7 @@ body {
   padding: 2rem;
   border-radius: 20px;
   backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 215, 0, 0.3);
+  border: 2px solid rgba(249, 199, 79, 0.3);
 }
 
 .ingredients-list {
@@ -452,12 +452,12 @@ body {
   padding: 0.8rem;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  border-left: 4px solid #ff006e;
+  border-left: 4px solid #ff6b35;
 }
 
 .ingredient-measure {
   font-weight: 700;
-  color: #ffd700;
+  color: #f9c74f;
   min-width: 80px;
 }
 
@@ -476,11 +476,11 @@ body {
   text-align: center;
   padding: 3rem;
   font-size: 1.5rem;
-  color: #ffd700;
+  color: #ffe5b4;
 }
 
 .error {
-  color: #ff006e;
+  color: #ff6b35;
 }
 
 /* Scrollbar Styling */
@@ -497,7 +497,7 @@ body {
 
 .ingredients-section::-webkit-scrollbar-thumb,
 .cocktails-section::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #ff006e, #ffd700);
+  background: linear-gradient(135deg, #ff6b35, #f9c74f);
   border-radius: 10px;
 }
 
